@@ -5,9 +5,10 @@ const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
     {
-      path: '/',
+      path: '/', //path / is calling HomeView tha is why we are seeing HomeView in localhost:5173/
       name: 'home',
-      component: HomeView,
+      component: HomeView, // remove that auto save , this make your pc slow because it is re
+      //running in every keyboard click, too bad
     },
     {
       path: '/about',
